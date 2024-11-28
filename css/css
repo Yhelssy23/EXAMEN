@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Replica de Bloques</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000; /* Fondo negro */
+    }
+
+    .contenedor {
+      display: grid;
+      grid-template-columns: 1fr 1fr 2fr; /* Dos columnas pequeñas y una más grande */
+      grid-template-rows: 1fr 1fr 1fr; /* Tres filas iguales */
+      gap: 0; /* Sin espacio entre bloques */
+      width: 80%;
+      height: 80%;
+    }
+
+    .dato1 {
+      background-color: #ff5722; /* Naranja */
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .dato1-1 {
+      background-color: #795548; /* Marrón */
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .dato2 {
+      background-color: #795548; /* Marrón */
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .dato3 {
+      background-color: #4caf50; /* Verde */
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .dato4 {
+      background-color: #2196f3; /* Azul */
+      grid-column: 3 / 4;
+      grid-row: 1 / 4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 4rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <div class="dato1">DATO 1</div>
+    <div class="dato1-1">DATO 1.1</div>
+    <div class="dato2">DATO 2</div>
+    <div class="dato3">DATO 3</div>
+    <div class="dato4">1</div>
+  </div>
+</body>
+</html>
